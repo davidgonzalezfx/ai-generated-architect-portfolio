@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Architect Portfolio</title>
+    <meta name="description"
+        content="Professional portfolio of [Your Name], an architect specializing in residential and commercial buildings.">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+</head>
+
+<body class="font-sans bg-gray-100">
+    <header x-data="{ isOpen: false }" class="bg-white shadow-md">
+        <nav class="container mx-auto px-6 py-3">
+            <div class="flex items-center justify-between">
+                <div class="text-xl font-bold text-gray-800">Your Name</div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#" class="text-gray-800 hover:text-gray-600">Home</a>
+                    <a href="#" class="text-gray-800 hover:text-gray-600">Projects</a>
+                    <a href="#" class="text-gray-800 hover:text-gray-600">About</a>
+                </div>
+                <button @click="isOpen = !isOpen" class="md:hidden">
+                    <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                        <path x-show="!isOpen" d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
+                        <path x-show="isOpen" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            <div x-show="isOpen" class="md:hidden mt-3">
+                <a href="#" class="block py-2 text-gray-800 hover:text-gray-600">Home</a>
+                <a href="#" class="block py-2 text-gray-800 hover:text-gray-600">Projects</a>
+                <a href="#" class="block py-2 text-gray-800 hover:text-gray-600">About</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-6 py-12">
+        <h1 class="text-4xl font-bold mb-8">Modern Residence</h1>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div class="space-y-6">
+                <img src="https://plus.unsplash.com/premium_photo-1683121877675-37d9a4f5bada?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8YXJjaGl0ZWN0dXJlJTIwcGxhbnxlbnwwfHwwfHx8MA%3D%3D" alt="Modern Residence" class="w-full h-auto rounded-lg shadow-md">
+                <div class="grid grid-cols-3 gap-4">
+                    <img src="https://images.unsplash.com/photo-1721244653546-a96caf5689ef?q=80&w=2085&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Interior view"
+                        class="w-full h-32 object-cover rounded-md shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1721244653546-a96caf5689ef?q=80&w=2085&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Exterior view"
+                        class="w-full h-32 object-cover rounded-md shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1721244653546-a96caf5689ef?q=80&w=2085&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Floor plan"
+                        class="w-full h-32 object-cover rounded-md shadow-sm">
+                </div>
+            </div>
+
+            <div class="space-y-6">
+                <div>
+                    <h2 class="text-2xl font-semibold mb-2">Project Overview</h2>
+                    <p class="text-gray-600">This modern residential project seamlessly blends contemporary design with
+                        functional living spaces. The sleek exterior features clean lines and large windows, allowing
+                        natural light to flood the interior.</p>
+                </div>
+
+                <div>
+                    <h2 class="text-2xl font-semibold mb-2">Key Features</h2>
+                    <ul class="list-disc list-inside text-gray-600">
+                        <li>Open-concept living areas</li>
+                        <li>Energy-efficient design</li>
+                        <li>Custom-built kitchen with high-end appliances</li>
+                        <li>Indoor-outdoor flow with expansive patio</li>
+                        <li>Smart home technology integration</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2 class="text-2xl font-semibold mb-2">Project Details</h2>
+                    <div class="grid grid-cols-2 gap-4 text-gray-600">
+                        <div>
+                            <p class="font-semibold">Location:</p>
+                            <p>Los Angeles, CA</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold">Year:</p>
+                            <p>2023</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold">Size:</p>
+                            <p>4,500 sq ft</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold">Type:</p>
+                            <p>Residential</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h2 class="text-2xl font-semibold mb-2">Client Testimonial</h2>
+                    <blockquote class="italic text-gray-600 border-l-4 border-gray-300 pl-4">
+                        "Working with this architect was an absolute pleasure. They transformed our vision into a
+                        stunning reality, creating a home that exceeds our expectations in both aesthetics and
+                        functionality."
+                    </blockquote>
+                    <p class="mt-2 text-gray-500">- John & Jane Doe</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-12">
+            <h2 class="text-2xl font-semibold mb-4">Related Projects</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://plus.unsplash.com/premium_photo-1664301102552-ff9df3b67f80?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGFyY2hpdGVjdHVyZSUyMHBsYW58ZW58MHx8MHx8fDA%3D" alt="Related Project 1" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2">Urban Loft</h3>
+                        <a href="#" class="text-blue-600 hover:text-blue-800">View Project →</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://plus.unsplash.com/premium_photo-1664301102552-ff9df3b67f80?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGFyY2hpdGVjdHVyZSUyMHBsYW58ZW58MHx8MHx8fDA%3D" alt="Related Project 2" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2">Beachfront Villa</h3>
+                        <a href="#" class="text-blue-600 hover:text-blue-800">View Project →</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://plus.unsplash.com/premium_photo-1664301102552-ff9df3b67f80?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGFyY2hpdGVjdHVyZSUyMHBsYW58ZW58MHx8MHx8fDA%3D" alt="Related Project 3" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold mb-2">Mountain Retreat</h3>
+                        <a href="#" class="text-blue-600 hover:text-blue-800">View Project →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p>&copy; 2024 Your Name. All rights reserved.</p>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="#" class="hover:text-gray-300">
+                        <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                            <path
+                                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                        </svg>
+                    </a>
+                    <a href="#" class="hover:text-gray-300">
+                        <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                            <path
+                                d="M23.954 4.569a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.691 8.094 4.066 6.13 1.64 3.161a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.061a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.937 4.937 0 004.604 3.417 9.868 9.868 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63a9.936 9.936 0 002.46-2.548l-.047-.02z" />
+                        </svg>
+                    </a>
+                    <a href="#" class="hover:text-gray-300">
+                        <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                            <path
+                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Add any custom JavaScript here
+    </script>
+</body>
+
+</html>
