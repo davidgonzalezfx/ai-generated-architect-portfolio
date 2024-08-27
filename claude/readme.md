@@ -15,6 +15,16 @@ Make it look professional as a real website (using correct image URLs, including
 
 You will share the HTML, CSS and JS code for each page and I might ask for changes, until I ask you for the next page. Then you will share just the section code as \<head> and navbar and footer will be the same. Start with the home page
 
+## Live preview
+
+Home - https://davidgonzalezfx.github.io/ai-generated-architect-portfolio/claude/
+
+Projects - https://davidgonzalezfx.github.io/ai-generated-architect-portfolio/claude/projects.html
+
+Project details - https://davidgonzalezfx.github.io/ai-generated-architect-portfolio/claude/project_1.html
+
+About me - https://davidgonzalezfx.github.io/ai-generated-architect-portfolio/claude/about.html
+
 ## Anthropic Claude
 
 🟢 Correct Tailwind CSS import

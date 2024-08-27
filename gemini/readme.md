@@ -15,6 +15,16 @@ Make it look professional as a real website (using correct image URLs, including
 
 You will share the HTML, CSS and JS code for each page and I might ask for changes, until I ask you for the next page. Then you will share just the section code as \<head> and navbar and footer will be the same. Start with the home page
 
+## Live preview
+
+Home - https://davidgonzalezfx.github.io/ai-generated-architect-portfolio/gemini/
+
+Projects - https://davidgonzalezfx.github.io/ai-generated-architect-portfolio/gemini/projects.html
+
+Project details - https://davidgonzalezfx.github.io/ai-generated-architect-portfolio/gemini/project_1.html
+
+About me - https://davidgonzalezfx.github.io/ai-generated-architect-portfolio/gemini/about.html
+
 ## Google Gemini
 
 🔴 Correct Tailwind CSS import - It worked after 4 tries and when I specified to use cdn.jsdelivr.net
